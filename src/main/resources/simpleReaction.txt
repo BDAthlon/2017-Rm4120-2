@@ -1,0 +1,7 @@
+Species A = 10;
+Species B = 0;
+Parameter k = 0.1;
+Reaction r = k*A;
+Reactant A -> r;
+Product B -> r;
+

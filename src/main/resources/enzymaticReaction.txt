@@ -1,0 +1,10 @@
+Species S = 10;
+Species P = 0;
+Species E = 1;
+Parameter vmax = 1;
+Parameter Km = 0.015;
+Reaction r = vmax*S/(Km+S);
+Reactant S -> r;
+Product P -> r;
+Modifier E -> r;
+
