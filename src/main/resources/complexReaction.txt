@@ -4,6 +4,6 @@ Parameter nc = 1;
 Parameter kf = 1;
 Parameter kr = 1;
 Reaction r = kf*S^nc-kr*P;
-Reactant S -> r;
-Product P -> r;
+Reactant 1 S -> r;
+Product 1 P -> r;
 

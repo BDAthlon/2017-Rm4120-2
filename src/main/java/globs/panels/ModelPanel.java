@@ -26,6 +26,7 @@ public class ModelPanel extends JPanel {
   private JTextArea editor = new JTextArea();
   private JButton run = new JButton("Run");
   private JButton clear = new JButton("Clear");
+  private JLabel score = new JLabel();
   
   public JComboBox<String> getList() {
     return list;
@@ -62,8 +63,9 @@ public class ModelPanel extends JPanel {
     JPanel scorePanel = new JPanel();
     scorePanel.setLayout(new GridLayout(2,1));
     scorePanel.add(new JLabel("Score"));
-    scorePanel.add(new JLabel());
-    panel.add(clear);
+    scorePanel.add(score);
+    //panel.add(clear);
+    panel.add(new JLabel());
     panel.add(scorePanel);
     panel.add(run);
     add(panel);
@@ -88,30 +90,35 @@ public class ModelPanel extends JPanel {
     panel.add(p);
   }
 
-  public JComboBox<String> getTemplates() {
+  public final  JComboBox<String> getTemplates() {
     return templates;
   }
 
   
-  public JTextField getDirectory() {
+  public final JTextField getDirectory() {
     return directory;
   }
 
   
-  public JButton getBrowser() {
+  public final JButton getBrowser() {
     return browser;
   }
   
-  public JButton getRun() {
+  public final JButton getRun() {
     return run;
   }
 
-  public JButton getClear() {
+  public final JButton getClear() {
     return clear;
   }
   
-  public JTextArea getEditor() {
+  public final  JTextArea getEditor() {
     return editor;
+  }
+  
+  public final JLabel getScore()
+  {
+    return score;
   }
 
 }

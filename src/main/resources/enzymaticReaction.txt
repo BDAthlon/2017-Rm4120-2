@@ -4,7 +4,7 @@ Species E = 1;
 Parameter vmax = 1;
 Parameter Km = 0.015;
 Reaction r = vmax*S/(Km+S);
-Reactant S -> r;
-Product P -> r;
+Reactant 1 S -> r;
+Product 1 P -> r;
 Modifier E -> r;
 
